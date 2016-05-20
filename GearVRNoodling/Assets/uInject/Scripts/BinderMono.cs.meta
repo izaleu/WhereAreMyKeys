@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5f50be23521385b409cca88626011bb0
+labels:
+- Code
+- DependencyInjection
+- Dependency
+- Injection
+- Ninject
+- Uinject
+- Ioc
+- IoC
+- uInject
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
