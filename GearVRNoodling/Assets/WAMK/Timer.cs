@@ -36,15 +36,26 @@ public class Timer : MonoBehaviour {
             TimeRemaining = TargetTime - Time.time;
             TimerDisplay.text = string.Format("{0:0}", TimeRemaining);
 
-            yield return new WaitForEndOfFrame();
-
-            
+            yield return new WaitForEndOfFrame();    
         }
-        //yield return new WaitForSeconds(durationInSeconds);
-      //  TimerFinished();
+        
+        TimerFinished();
+    }
+
+    public void StopTimer()
+    {
+        StopCoroutine(RunTimer(TimerLength));
+        TimerStopped();
+    }
+
+    void OnDestroy()
+    {
+        ExpositionText.ExpositionFinished -= StartTimer;
     }
 
     public delegate void EventHandler();
 
     public static event EventHandler TimerFinished;
+
+    public static event EventHandler TimerStopped;
 }

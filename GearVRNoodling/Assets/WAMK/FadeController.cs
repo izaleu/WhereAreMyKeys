@@ -53,4 +53,9 @@ public class FadeController : MonoBehaviour {
     {
         StartCoroutine(FadeIn(1.0f));
     }
+
+    void OnDestroy()
+    {
+        ExpositionText.ExpositionFinished -= StartFadeIn;
+    }
 }
