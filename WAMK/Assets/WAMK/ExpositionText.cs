@@ -8,6 +8,9 @@ public class ExpositionText : MonoBehaviour {
     string[] SequentialTexts;
 
     [SerializeField]
+    GameObject SkipButton;
+
+    [SerializeField]
     Color White;
 
     [SerializeField]
@@ -56,9 +59,25 @@ public class ExpositionText : MonoBehaviour {
             CurrentText = 0;
         }
 
+        if (CurrentText == 0)
+        {
+            SkipButton.SetActive(true);
+        }
+        else
+        {
+            SkipButton.SetActive(false);
+        }
+
         DisplayText.text = SequentialTexts[CurrentText];
 
         StartCoroutine(FadeIn(FadeDuration));
+    }
+
+    public void SkipIntro()
+    {
+        ExpositionFinished();
+        CompletedExposition = true;
+        StartCoroutine(FadeOut(FadeDuration));
     }
 
     IEnumerator FadeOut(float duration)

@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0.6797343, y: 0, z: 0, w: 0.73345846}
   m_LocalPosition: {x: -1.9985, y: 1.6619, z: -1.3682}
   m_LocalScale: {x: 0.02683707, y: 0.026837066, z: 0.026837066}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,17 +42,20 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 1927e168affbc9f46b605f686e53a4fa, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -103,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded8f71e7feb71b4f897d2bc5bd78d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlowMat: {fileID: 2100000, guid: 92d3bf74cadd7124cb23f63bcca021b3, type: 2}
+  GlowMat: {fileID: 2100000, guid: 5312e2abc23f29843ab3d9c643294cd7, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

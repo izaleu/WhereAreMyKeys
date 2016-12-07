@@ -9,8 +9,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     Key[] Keys;
 
-    [SerializeField]
-    string WinSceneName, LoseSceneName;
+    string WinSceneName = "Win", LoseSceneName = "Lose";
 
     void Awake()
     {
