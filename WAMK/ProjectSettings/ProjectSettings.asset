@@ -10,12 +10,12 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Darcy Nelson
-  productName: Where Art My Keys?
+  companyName: IZALEU
+  productName: Where Are My Keys?
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenStyle: 0
-  m_ShowUnitySplashScreen: 1
+  m_SplashScreenStyle: 1
+  m_ShowUnitySplashScreen: 0
   m_VirtualRealitySplashScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -31,7 +31,7 @@ PlayerSettings:
   androidShowActivityIndicatorOnLoading: -1
   tizenShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -97,15 +97,15 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.DarcyVR.WhereAreMyKeys
-  bundleVersion: 1.0
+  bundleVersion: 1.02
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   xboxOneDisableKinectGpuReservation: 0
   singlePassStereoRendering: 0
   protectGraphicsMemory: 0
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 21
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 2
   aotOptions: 
   apiCompatibilityLevel: 2
   stripEngineCode: 1
@@ -170,8 +170,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/WhereAreMyKeys/WAMK/user.keystore
+  AndroidKeyaliasName: production
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 0
@@ -185,7 +185,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 98c659735388b70458bd5ad415d38e45, type: 3}
+      m_Icon: {fileID: 2800000, guid: 089ca55cac38f234196035ad5e6757e8, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching:

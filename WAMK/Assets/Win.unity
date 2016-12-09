@@ -1219,6 +1219,7 @@ GameObject:
   - 4: {fileID: 2123701032}
   - 114: {fileID: 2123701031}
   - 114: {fileID: 2123701033}
+  - 114: {fileID: 2123701034}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1264,5 +1265,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Keys: []
-  WinSceneName: 
-  LoseSceneName: 
+--- !u!114 &2123701034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123701030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a023bf4efda4145860192b9d3df5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

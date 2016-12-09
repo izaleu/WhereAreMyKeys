@@ -22,6 +22,8 @@ public class ExpositionText : MonoBehaviour {
     [SerializeField]
     float FadeDuration = 1.0f;
 
+    float ButtonHeld = 0.0f;
+
     int CurrentText = -1;
 
     bool ReadyToFade = true;
@@ -35,6 +37,7 @@ public class ExpositionText : MonoBehaviour {
 
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0) && ReadyToFade==true)
         {
             if (CurrentText == SequentialTexts.Length - 1)
@@ -47,6 +50,21 @@ public class ExpositionText : MonoBehaviour {
                 ReadyToFade = false;
                 StartCoroutine(FadeOut(FadeDuration));
             }
+        }
+
+       if(Input.GetMouseButton(0) && CurrentText>0)
+        {
+            ButtonHeld += Time.deltaTime;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            ButtonHeld = 0.0f;
+        }
+
+        if (ButtonHeld > 1.0f)
+        {
+            SkipIntro();
         }
     }
 
